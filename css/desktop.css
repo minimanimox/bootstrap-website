@@ -115,6 +115,7 @@ body {
                     padding-bottom: 40px;
                 }
                 .container {
+                    padding-left: 0;
                     .col {
                         padding-bottom: 20px;
                         max-width: 310px;
@@ -128,6 +129,7 @@ body {
                 }
                 .message-input {
                     .form-control {
+                        padding-left: 0;
                         resize: none;
                         width: 600px;
                         height: 140px;
