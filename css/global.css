@@ -9,6 +9,11 @@
   font-style: normal;
 }
 
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 button {
   background: inherit;
   border: none;

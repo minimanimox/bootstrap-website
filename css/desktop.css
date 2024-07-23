@@ -1,0 +1,161 @@
+.header {
+  .wrapper {
+    margin: 30px auto;
+
+    strong {
+      font-size: 24px;
+      margin-right: 78px;
+    }
+  }
+}
+
+section {
+  background-color: #252b42;
+}
+
+.section1-container {
+  background-image: linear-gradient(to right, #000, transparent),
+    url("../assets/MainCover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 216px 0 112px;
+
+  h1 {
+    max-width: 599px;
+
+    font-size: 58px;
+    line-height: 80px;
+  }
+
+  h4 {
+    max-width: 376px;
+    margin-top: 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .btn-wrapper {
+    margin-top: 35px;
+
+    .btn {
+      font-size: 14px;
+    }
+  }
+}
+
+.section2-container {
+  padding: 96px 0;
+
+  span {
+    max-width: 234px;
+
+    font-size: 14px;
+  }
+}
+
+.section3-container {
+  background-color: #8ec2f2;
+  padding: 112px 0;
+
+  h5 {
+    margin: 10px 0 120px;
+    max-width: 470px;
+
+    font-size: 14px;
+  }
+
+  .row {
+    gap: 137px;
+
+    .user {
+      top: 30px;
+      left: -45px;
+
+      width: 72px;
+    }
+
+    .col {
+      background-color: #fff;
+      padding: 30px 40px;
+      margin-left: 45px;
+
+      .title {
+        font-size: 24px;
+        line-height: 32px;
+
+        span {
+          margin-top: 0;
+        }
+      }
+
+      .stars {
+        width: 130px;
+      }
+
+      span {
+        margin-top: 15px;
+
+        color: #737373;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+}
+
+.section4-container {
+  padding: 112px 0;
+
+  .wrapper {
+    width: auto;
+    max-width: 1400px;
+  }
+
+  h5 {
+    margin: 10px 0 120px;
+    max-width: 470px;
+
+    font-size: 14px;
+  }
+
+  .col {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 452px;
+    padding: 20px;
+
+    &.col1 {
+      background-image: url("../assets/Post1.jpg");
+    }
+    &.col2 {
+      background-image: url("../assets/Post2.jpg");
+    }
+    &.col3 {
+      background-image: url("../assets/Post3.jpg");
+    }
+    &.col4 {
+      background-image: url("../assets/Post4.jpg");
+    }
+
+    h6 {
+      margin-bottom: 15px;
+
+      font-size: 14px;
+    }
+
+    h4 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    button {
+      background-image: none;
+      width: fit-content;
+
+      font-size: 14px;
+    }
+  }
+}
