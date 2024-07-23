@@ -9,6 +9,11 @@
   font-style: normal;
 }
 
+a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+
 button {
   background: inherit;
   border: none;
@@ -22,4 +27,10 @@ button {
 .wrapper {
   width: 1050px;
   margin: 0 auto;
+}
+
+:root {
+    --background-color:  rgba(37, 43, 66, 1);
+    --second-font-color: rgba(115, 115, 115, 1);
+    --button-color: rgba(35, 166, 240, 1);
 }
