@@ -179,11 +179,9 @@ section {
 
 .pricing {
   background: var(--background-color);
-
   .wrapper {
     .pricing-title {
-      font-size: 40px;
-      padding-top: 112px;
+      font-size: 2rem;
     }
 
     .pricing-text {
@@ -225,10 +223,9 @@ section {
         }
 
         .price-container {
-
           .card-price,
           .desktop-dollor {
-            font-size: 40px;
+            font-size: 2rem;
             color: var(--button-color);
             margin-bottom: 0;
           }
@@ -244,7 +241,6 @@ section {
             }
           }
         }
-
 
         .btn-custom {
           background: var(--button-color);
@@ -300,7 +296,7 @@ section {
     }
 
     .appointment {
-      font-size: 40px;
+      font-size: 2rem;
       padding-bottom: 40px;
     }
 
