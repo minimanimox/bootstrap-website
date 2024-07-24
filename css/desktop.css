@@ -1,234 +1,407 @@
+@import url("./global.css");
 
+.header {
+  position: fixed;
 
-body {
-    main {
-        .pricing {
-            background: var(--background-color);
-            .wrapper {
-                #pricing-title {
-                    text-align: center;
-                    font-size: 40px;
-                    font-weight: bold;
-                    padding-top: 112px;
-                    color: white;
-                }
-                #pricing-text {
-                    text-align: center;
-                    width: 470px;
-                    margin: 0 auto;
-                    padding-top: 10px;
-                    padding-bottom: 80px;
-                    color: white;
-                    font-size: 14px;
-                }
+  .wrapper {
+    margin: 30px auto;
 
-                .col-sm-4 {
-                    position: relative;
-                    .new-container {
-                        .new {
-                            position: absolute;
-                            right: 27px;
-                            z-index: 1;
-                        }
-                    }
-                }
-                .card {
-                    margin-bottom: 141px;
-                    margin-top: 26px;
-                    .card-body {
-                        text-align: center;
-                        padding: 0;
-                        .card-title {
-                            text-align: center;
-                            font-weight: bold;
-                            font-size: 24px;
-                            padding-top: 50px;
-                            margin-bottom: 0;
-                        }
-                        .card-text {
-                            font-size: 16px;
-                            font-weight: bold;
-                            color: var(--second-font-color);
-                            padding: 35px 70px;
-                            margin-bottom: 0;
-                        }
-                        .card-price {
-                            font-size: 40px;
-                            font-weight: bold;
-                            color: var(--button-color);
-                            margin-bottom: 0;
-                        }
-                        .per-month {
-                            color: rgba(142, 194, 242, 1);
-                            font-weight: bold;
-                        }
-                        .btn-custom {
-                            background: var(--button-color);
-                            color: white;
-                            font-size: 14px;
-                            font-weight: bold;
-                            border: none;
-                            width: 246px;
-                            height: 52px;
-                            text-align: center;
-                            align-items: center;
-                            padding: 15px 40px;
-                            margin: 35px 0;
-                        }
-                        .lists {
-                            ul {
-                                list-style: none;
-                                padding: 0 40px 35px;
-                                li {
-                                    display: flex;
-                                    align-items: center;
-                                    text-align: left;
-                                    font-size: 14px;
-                                    font-weight: bold;
-                                    padding-bottom: 15px;
-                                    img {
-                                        display: flex;
-                                        padding-right: 10px;
-                                    }
-                                }
-                            }
-                            
-                        }
-                    }
-                }
-            }
-        }
-        .contact-us {
-            background-image: linear-gradient(to right, white 20%, rgba(191, 191, 191, 0.3)), url(../assets/ContactCover.png);
-            background-repeat: none;
-            background-position-x: 100%;
-
-            .wrapper {
-                #contact-title {
-                    font-size: 16px;
-                    font-weight: bold;
-                    padding-top: 90px;
-                }
-                #appointment {
-                    font-size: 40px;
-                    font-weight: bold;
-                    padding-bottom: 40px;
-                }
-                .container {
-                    padding-left: 0;
-                    .col {
-                        padding-bottom: 20px;
-                        max-width: 310px;
-                        .form-control, .form-select {
-                            width: 290px;
-                            font-size: 14px;
-                            color: var(--second-font-color);
-                            padding: 11px 21px;
-                        }
-                    }
-                }
-                .message-input {
-                    .form-control {
-                        padding-left: 0;
-                        resize: none;
-                        width: 600px;
-                        height: 140px;
-                        margin-bottom: 40px;
-                    }
-                }
-                .btn-custom {
-                    display: flex;
-                    background: var(--button-color);
-                    font-size: 14px;
-                    font-weight: bold;
-                    border: none;
-                    height: 52px;
-                    text-align: center;
-                    align-items: center;
-                    padding: 15px 40px;
-                } 
-                .margin {
-                    padding-bottom: 90px;
-                }
-            }
-        }
+    strong {
+      font-size: 24px;
+      margin-right: 78px;
     }
-    footer {
+  }
+
+  .pc-header {
+    display: flex;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+}
+
+section {
+  background-color: #252b42;
+}
+
+.section1-container {
+  background-image: linear-gradient(to right, #000, transparent),
+    url("../assets/MainCover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 216px 0 112px;
+
+  h1 {
+    max-width: 599px;
+
+    font-size: 58px;
+    line-height: 80px;
+  }
+
+  h4 {
+    max-width: 376px;
+    margin-top: 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .btn-wrapper {
+    margin-top: 35px;
+
+    .btn {
+      font-size: 14px;
+    }
+  }
+}
+
+.section2-container {
+  padding: 96px 0;
+
+  span {
+    max-width: 234px;
+
+    font-size: 14px;
+  }
+}
+
+.section3-container {
+  background-color: #8ec2f2;
+  padding: 112px 0;
+
+  h5 {
+    margin: 10px 0 120px;
+    max-width: 470px;
+
+    font-size: 14px;
+  }
+
+  .row {
+    gap: 137px;
+
+    .user {
+      top: 30px;
+      left: -45px;
+
+      width: 72px;
+    }
+
+    .col {
+      background-color: #fff;
+      padding: 30px 40px;
+      margin-left: 45px;
+
+      .title {
+        font-size: 24px;
+        line-height: 32px;
+
+        span {
+          margin-top: 0;
+        }
+      }
+
+      .stars {
+        width: 130px;
+      }
+
+      span {
+        margin-top: 15px;
+
+        color: #737373;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+}
+
+.section4-container {
+  padding: 112px 0;
+
+  .wrapper {
+    width: auto;
+    max-width: 1400px;
+  }
+
+  h5 {
+    margin: 10px 0 120px;
+    max-width: 470px;
+
+    font-size: 14px;
+  }
+
+  .col {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 452px;
+    padding: 20px;
+
+    &.col1 {
+      background-image: url("../assets/Post1.jpg");
+    }
+    &.col2 {
+      background-image: url("../assets/Post2.jpg");
+    }
+    &.col3 {
+      background-image: url("../assets/Post3.jpg");
+    }
+    &.col4 {
+      background-image: url("../assets/Post4.jpg");
+    }
+
+    h6 {
+      margin-bottom: 15px;
+
+      font-size: 14px;
+    }
+
+    h4 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    button {
+      background-image: none;
+      width: fit-content;
+
+      font-size: 14px;
+    }
+  }
+}
+
+.pricing {
+  background: var(--background-color);
+  .wrapper {
+    #pricing-title {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      padding-top: 112px;
+      color: white;
+    }
+    #pricing-text {
+      text-align: center;
+      width: 470px;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 80px;
+      color: white;
+      font-size: 14px;
+    }
+
+    .col-sm-4 {
+      position: relative;
+      .new-container {
+        .new {
+          position: absolute;
+          right: 27px;
+          z-index: 1;
+        }
+      }
+    }
+    .card {
+      margin-bottom: 141px;
+      margin-top: 26px;
+      .card-body {
+        text-align: center;
+        padding: 0;
+        .card-title {
+          text-align: center;
+          font-weight: bold;
+          font-size: 24px;
+          padding-top: 50px;
+          margin-bottom: 0;
+        }
+        .card-text {
+          font-size: 16px;
+          font-weight: bold;
+          color: var(--second-font-color);
+          padding: 35px 70px;
+          margin-bottom: 0;
+        }
+        .card-price {
+          font-size: 40px;
+          font-weight: bold;
+          color: var(--button-color);
+          margin-bottom: 0;
+        }
+        .per-month {
+          color: rgba(142, 194, 242, 1);
+          font-weight: bold;
+        }
+        .btn-custom {
+          background: var(--button-color);
+          color: white;
+          font-size: 14px;
+          font-weight: bold;
+          border: none;
+          width: 246px;
+          height: 52px;
+          text-align: center;
+          align-items: center;
+          padding: 15px 40px;
+          margin: 35px 0;
+        }
+        .lists {
+          ul {
+            list-style: none;
+            padding: 0 40px 35px !important;
+            li {
+              display: flex;
+              align-items: center;
+              text-align: left;
+              font-size: 14px;
+              font-weight: bold;
+              padding-bottom: 15px;
+              img {
+                display: flex;
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.contact-us {
+  background-image: linear-gradient(
+      to right,
+      white 20%,
+      rgba(191, 191, 191, 0.3)
+    ),
+    url(../assets/ContactCover.png);
+  background-repeat: none;
+  background-position-x: 100%;
+
+  .wrapper {
+    #contact-title {
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 90px;
+    }
+    #appointment {
+      font-size: 40px;
+      font-weight: bold;
+      padding-bottom: 40px;
+    }
+    .container {
+      padding-left: 0;
+      .col {
+        padding-bottom: 20px;
+        max-width: 310px;
+        .form-control,
+        .form-select {
+          width: 290px;
+          font-size: 14px;
+          color: var(--second-font-color);
+          padding: 11px 21px;
+        }
+      }
+    }
+    .message-input {
+      .form-control {
+        padding-left: 0;
+        resize: none;
+        width: 600px;
+        height: 140px;
+        margin-bottom: 40px;
+      }
+    }
+    .btn-custom {
+      display: flex;
+      background: var(--button-color);
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      height: 52px;
+      text-align: center;
+      align-items: center;
+      padding: 15px 40px;
+    }
+    .margin {
+      padding-bottom: 90px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  .footer-top {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      .text-container {
         display: flex;
         flex-direction: column;
-        padding-top: 40px;
-        .footer-top {
-            .wrapper {
-                display: flex;
-                justify-content: space-between;
-                .text-container {
-                    display: flex;
-                    flex-direction: column;
-                    #text-top {
-                        font-size: 24px;
-                    }
-                    #text-bottom {
-                        font-size: 14px;
-                        color: var(--second-font-color);
-                        padding-bottom: 40px;
-                    }
-                }
-                .btn-custom {
-                    display: flex;
-                    background: rgba(35, 166, 240, 1);
-                    font-size: 14px;
-                    font-weight: bold;
-                    border: none;
-                    height: 52px;
-                    text-align: center;
-                    align-items: center;
-                    padding: 15px 40px;
-                } 
-            }
+        #text-top {
+          font-size: 24px;
         }
-        .footer-middle {
-            background: var(--background-color);
-            color: white;
-            .wrapper {
-                display: flex;
-                justify-content: space-evenly;
-                .link-container {
-                    display: flex;
-                    flex-direction: column;
-                    padding: 50px 32px 50px 0;
-                    h4 {
-                        font-size: 16px;
-                        margin-bottom: 20px;
-                    }
-                    ul {
-                        padding-left: 0;
-                    }
-                    ul li {
-                        font-size: 14px;
-                        line-height: 2.5;
-                    }
-                }
-            }          
+        #text-bottom {
+          font-size: 14px;
+          color: var(--second-font-color);
+          padding-bottom: 40px;
         }
-        .footer-bottom {
-            .wrapper {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                #copyright {
-                    display: flex;
-                    align-items: center;
-                    font-size: 14px;
-                    font-weight: bold;
-                    color: var(--second-font-color);
-                    padding: 25px 0;
-                    padding-bottom: 0;
-                }
-                #blog-container {
-                    display: flex;
-                }
-            }
-        }
+      }
+      .btn-custom {
+        display: flex;
+        background: rgba(35, 166, 240, 1);
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        height: 52px;
+        text-align: center;
+        align-items: center;
+        padding: 15px 40px;
+      }
     }
-    
+  }
+  .footer-middle {
+    background: var(--background-color);
+    color: white;
+    .wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      .link-container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 32px 50px 0;
+        h4 {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+        ul {
+          padding-left: 0;
+        }
+        ul li {
+          font-size: 14px;
+          line-height: 2.5;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #copyright {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--second-font-color);
+        padding: 25px 0;
+        padding-bottom: 0;
+      }
+      #blog-container {
+        display: flex;
+      }
+    }
+  }
 }

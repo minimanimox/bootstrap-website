@@ -1,1 +1,38 @@
-@import url("./global.css");
+@media screen and (max-width: 415px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 35px;
+  }
+
+  .header {
+    position: static;
+
+    background-color: #252b42;
+
+    .wrapper {
+      margin: 0 auto;
+
+      .accordion-item {
+        background-color: inherit;
+
+        .accordion-button {
+          width: fit-content;
+          background-color: inherit;
+          padding: 0;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .pc-header {
+      display: none;
+    }
+
+    .mobile-header {
+      display: flex;
+    }
+  }
+}

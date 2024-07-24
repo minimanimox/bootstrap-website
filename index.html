@@ -13,127 +13,332 @@
     <link rel="stylesheet" href="./css/desktop.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <title>Bootstrap-website</title>
-</head>
-
-<body>
-    <header>header</header>
+  </head>
+  <body>
+    <header class="header top-0 z-3 w-100 text-white">
+      <div class="wrapper pc-header justify-content-between align-items-center">
+        <strong>BrandName</strong>
+        <div>
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <nav>
+              <ul class="d-flex gap-4">
+                <li>Home</li>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+            <div>
+              <button type="button" class="btn me-4 px-4 py-3 text-white">
+                Login
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary px-4 py-3 text-white"
+              >
+                Become a member<img
+                  class="ms-2"
+                  src="./assets/WhiteArrow.png"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="wrapper mobile-header accordion accordion-flush"
+        id="accordionFlushExample"
+      >
+        <div class="accordion-item w-100">
+          <h2
+            class="accordion-header d-flex align-items-center justify-content-between px-4 py-4"
+          >
+            <strong class="me-0 text-white">BrandName</strong>
+            <div
+              class="d-flex align-items-center justify-content-end gap-4 w-100"
+            >
+              <img src="./assets/Search.png" />
+              <img src="./assets/Cart.png" />
+              <button
+                class="accordion-button collapsed shadow-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <img src="./assets/Menu.png" />
+              </button>
+            </div>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse text-white"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body pt-2 pb-5 py-5">
+              <ul class="d-flex flex-column align-items-center gap-4 fs-3">
+                <li>Home</li>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
-        <section>section1</section>
-        <section>section2</section>
-        <section>section3</section>
-        <section class="pricing">
-            <div class="wrapper">
-                <h3 id="pricing-title">Pricing</h3>
-                <h4 id="pricing-text">Problems trying to resolve the conflict between<br/> 
-                    the two major realms of Classical physics: Newtonian mechanics </h4>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">FREE</h5>
-                                    <p class="card-text">Organize across all apps by hand</p>
-                                    <p class="card-price">0$</p>
-                                    <p class="per-month">Per Month</p>
-                                    <a href="#" class="btn btn-custom">Try for free</a>
-                                    <div class="lists">
-                                        <ul>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/PendingCircle.png" alt="gray checkmark">1GB Cloud storage</li>
-                                            <li><img src="./assets/PendingCircle.png" alt="gray checkmark">Email and community Support</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-sm-4">
-                            <div class="new-container">
-                                <img class="new" src="./assets/New.png" alt="new mark">
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Silver</h5>
-                                    <p class="card-text">Organize across all apps by hand</p>
-                                    <p class="card-price">9.99$</p>
-                                    <p class="per-month">Per Month</p>
-                                    <a href="#" class="btn btn-custom">Try for free</a>
-                                    <div class="lists">
-                                        <ul>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/PendingCircle.png" alt="gray checkmark">1GB Cloud storage</li>
-                                            <li><img src="./assets/PendingCircle.png" alt="gray checkmark">Email and community Support</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">GOLD</h5>
-                                    <p class="card-text">Organize across all apps by hand</p>
-                                    <p class="card-price">19.99$</p>
-                                    <p class="per-month">Per Month</p>
-                                    <a href="#" class="btn btn-custom">Try for free</a>
-                                    <div class="lists">
-                                        <ul>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
-                                            <li><img src="./assets/PendingCircle.png" alt="gray checkmark">1GB Cloud storage</li>
-                                            <li><img src="./assets/PendingCircle.png" alt="gray checkmark">Email and community Support</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
+      <section class="section1-container text-white">
+        <div class="wrapper">
+          <h1 class="fw-bold">We Ensure A Best Insurance Service</h1>
+          <h4>
+            We know how large objects will act, but things on a small scale.
+          </h4>
+          <div class="btn-wrapper d-flex gap-2">
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill px-4 py-3"
+            >
+              Get Quote Now
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light rounded-pill px-4 py-3"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section2-container text-white">
+        <div class="wrapper d-flex justify-content-around">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <img class="pb-4" src="./assets/PeaceOfMind.png" />
+            <div class="d-flex flex-column align-items-center text-center">
+              <strong class="pb-3">Peace of mind</strong>
+              <span>
+                So it really behaves like neither. Now we have given up.
+              </span>
             </div>
-        </section>
-        <section class="contact-us">
-            <div class="wrapper">
-                <h3 id="contact-title">Contact Us</h3>
-                <h4 id="appointment">Make an Appointment</h4>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" id="name" placeholder="Full Name *"> 
-                        </div>
-                        <div class="col">
-                            <input type="email" class="form-control" id="email" placeholder="Email *">
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <img class="pb-4" src="./assets/SetForLife.png" />
+            <div class="d-flex flex-column align-items-center text-center">
+              <strong class="pb-3">Set For Life</strong>
+              <span> They were used to create the machines that launched </span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <img class="pb-4" src="./assets/Satisfaction.png" />
+            <div class="d-flex flex-column align-items-center text-center">
+              <strong class="pb-3">100% Satisfaction</strong>
+              <span>
+                So it really behaves like neither. Now we have given up.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3-container text-white">
+        <div class="wrapper d-flex flex-column align-items-center">
+          <h2 class="fw-bold">Industry</h2>
+          <h5 class="text-center">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </h5>
+          <div class="row">
+            <div class="position-relative col d-flex flex-column text-dark">
+              <img class="user position-absolute" src="./assets/User1.png" />
+              <div class="title fw-bold d-flex flex-column">
+                Regina Miles<span class="fw-normal">Designer</span>
+              </div>
+              <img class="stars mt-3" src="./assets/Stars.png" />
+              <span class="fw-normal">
+                This proved to be impossible using the traditional concepts of
+                space and time. Einstein developed a new view of time first and
+                then space. This proved to be impossible using the traditional
+                concepts of space and time. Einstein developed a new view of
+                time first and then space.
+              </span>
+            </div>
+            <div class="position-relative col d-flex flex-column text-dark">
+              <img class="user position-absolute" src="./assets/User2.png" />
+              <div class="title fw-bold d-flex flex-column">
+                Regina Miles<span class="fw-normal">Designer</span>
+              </div>
+              <img class="stars mt-3" src="./assets/Stars.png" />
+              <span class="fw-normal">
+                This proved to be impossible using the traditional concepts of
+                space and time. Einstein developed a new view of time first and
+                then space. This proved to be impossible using the traditional
+                concepts of space and time. Einstein developed a new view of
+                time first and then space.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section4-container text-white">
+        <div class="wrapper">
+          <div class="d-flex flex-column align-items-center">
+            <h2 class="fw-bold">Industry</h2>
+            <h5 class="text-center">
+              Problems trying to resolve the conflict between the two major
+              realms of Classical physics: Newtonian mechanics
+            </h5>
+          </div>
+          <div class="row gap-4">
+            <div class="col col1 d-flex flex-column justify-content-end">
+              <h6 class="fw-bold">Tax Management</h6>
+              <h4>Life Tips From Top Ten Adventure Travelers</h4>
+              <button type="button" class="btn btn-primary rounded-pill px-4">
+                Get Quote Now
+              </button>
+            </div>
+            <div class="col col2 d-flex flex-column justify-content-end">
+              <h6 class="fw-bold">Tax Management</h6>
+              <h4>Life Tips From Top Ten Adventure Travelers</h4>
+              <button type="button" class="btn btn-primary rounded-pill px-4">
+                Get Quote Now
+              </button>
+            </div>
+            <div class="col col3 d-flex flex-column justify-content-end">
+              <h6 class="fw-bold">Tax Management</h6>
+              <h4>Life Tips From Top Ten Adventure Travelers</h4>
+              <button type="button" class="btn btn-primary rounded-pill px-4">
+                Get Quote Now
+              </button>
+            </div>
+            <div class="col col4 d-flex flex-column justify-content-end">
+              <h6 class="fw-bold">Tax Management</h6>
+              <h4>Life Tips From Top Ten Adventure Travelers</h4>
+              <button type="button" class="btn btn-primary rounded-pill px-4">
+                Get Quote Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing">
+        <div class="wrapper">
+            <h3 id="pricing-title">Pricing</h3>
+            <h4 id="pricing-text">Problems trying to resolve the conflict between<br/> 
+                the two major realms of Classical physics: Newtonian mechanics </h4>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">FREE</h5>
+                                <p class="card-text">Organize across all apps by hand</p>
+                                <p class="card-price">0$</p>
+                                <p class="per-month">Per Month</p>
+                                <a href="#" class="btn btn-custom">Try for free</a>
+                                <div class="lists">
+                                    <ul>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/PendingCircle.png" alt="gray checkmark">1GB Cloud storage</li>
+                                        <li><img src="./assets/PendingCircle.png" alt="gray checkmark">Email and community Support</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <select class="form-select" aria-label="select">
-                                <option selected>Please Select</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                    <div class="col-12 col-md-4 col-sm-4">
+                        <div class="new-container">
+                            <img class="new" src="./assets/New.png" alt="new mark">
                         </div>
-                        <div class="col">
-                            <select class="form-select" aria-label="time">
-                                <option selected>4:00 Available</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Silver</h5>
+                                <p class="card-text">Organize across all apps by hand</p>
+                                <p class="card-price">9.99$</p>
+                                <p class="per-month">Per Month</p>
+                                <a href="#" class="btn btn-custom">Try for free</a>
+                                <div class="lists">
+                                    <ul>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/PendingCircle.png" alt="gray checkmark">1GB Cloud storage</li>
+                                        <li><img src="./assets/PendingCircle.png" alt="gray checkmark">Email and community Support</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="message-input">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">GOLD</h5>
+                                <p class="card-text">Organize across all apps by hand</p>
+                                <p class="card-price">19.99$</p>
+                                <p class="per-month">Per Month</p>
+                                <a href="#" class="btn btn-custom">Try for free</a>
+                                <div class="lists">
+                                    <ul>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/SuccessCircle.png" alt="green checkmark">Unlimited product updates</li>
+                                        <li><img src="./assets/PendingCircle.png" alt="gray checkmark">1GB Cloud storage</li>
+                                        <li><img src="./assets/PendingCircle.png" alt="gray checkmark">Email and community Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="btn btn-primary btn-custom" type="submit">Book Appointment</button>
-                    <div class="margin"></div>
                 </div>
+        
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="wrapper">
+            <h3 id="contact-title">Contact Us</h3>
+            <h4 id="appointment">Make an Appointment</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="name" placeholder="Full Name *"> 
+                    </div>
+                    <div class="col">
+                        <input type="email" class="form-control" id="email" placeholder="Email *">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select" aria-label="select">
+                            <option selected>Please Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" aria-label="time">
+                            <option selected>4:00 Available</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="message-input">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary btn-custom" type="submit">Book Appointment</button>
+                <div class="margin"></div>
             </div>
-        </section>
+        </div>
+    </section>
     </main>
 
     <footer>
