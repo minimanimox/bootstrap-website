@@ -1,13 +1,14 @@
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 1000px) {
   .wrapper {
-    width: 100%;
+    width: auto;
     margin: 0 35px;
   }
 
   .header {
-    position: static;
+    position: fixed;
 
     background-color: #252b42;
+    filter: opacity(0.9);
 
     .wrapper {
       margin: 0 auto;
@@ -33,6 +34,78 @@
 
     .mobile-header {
       display: flex;
+    }
+  }
+
+  .section1-container {
+    background-image: linear-gradient(
+        to right,
+        rgba(0 0 0 / 75%),
+        rgba(0 0 0 / 75%)
+      ),
+      url("../assets/MainCover.png");
+    padding: 150px 0 80px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+
+      h1 {
+        font-size: 40px;
+        line-height: 57px;
+      }
+
+      h4 {
+        margin-top: 40px;
+      }
+
+      .btn-wrapper {
+        flex-direction: column;
+        gap: 30px !important;
+
+        width: fit-content;
+        padding-left: 36px;
+        padding-right: 36px;
+      }
+    }
+  }
+
+  .section2-container {
+    .wrapper {
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+
+  .section3-container {
+    h2 {
+      font-size: 40px;
+    }
+
+    .row {
+      flex-direction: column;
+      gap: 30px;
+
+      .col {
+        margin-left: 0;
+
+        .user {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section4-container {
+    h2 {
+      font-size: 40px;
+    }
+
+    .row {
+      display: grid;
     }
   }
 }

@@ -2,6 +2,7 @@
 
 .header {
   position: fixed;
+  background-color: rgba(0 0 0 / 20%);
 
   .wrapper {
     margin: 30px auto;
@@ -29,6 +30,7 @@ section {
   background-image: linear-gradient(to right, #000, transparent),
     url("../assets/MainCover.png");
   background-repeat: no-repeat;
+  background-position-x: center;
   background-size: cover;
 
   padding: 216px 0 112px;
