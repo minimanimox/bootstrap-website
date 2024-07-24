@@ -144,12 +144,15 @@ section {
     &.col1 {
       background-image: url("../assets/Post1.jpg");
     }
+
     &.col2 {
       background-image: url("../assets/Post2.jpg");
     }
+
     &.col3 {
       background-image: url("../assets/Post3.jpg");
     }
+
     &.col4 {
       background-image: url("../assets/Post4.jpg");
     }
@@ -176,11 +179,13 @@ section {
 
 .pricing {
   background: var(--background-color);
+
   .wrapper {
     .pricing-title {
       font-size: 40px;
       padding-top: 112px;
     }
+
     .pricing-text {
       width: 470px;
       margin: 0 auto;
@@ -191,46 +196,55 @@ section {
 
     .col-sm-4 {
       position: relative;
+
       .new-container {
         .new {
           right: 27px;
         }
       }
     }
+
     .card {
       margin-bottom: 141px;
       margin-top: 26px;
+
       .card-body {
         padding: 0;
+
         .card-title {
           font-size: 24px;
           padding-top: 50px;
           margin-bottom: 0;
         }
+
         .card-text {
           font-size: 16px;
           color: var(--second-font-color);
           padding: 35px 70px;
           margin-bottom: 0;
         }
+
         .price-container {
-            .card-price, .desktop-dollor {
-                font-size: 40px;
-                color: var(--button-color);
-                margin-bottom: 0;
+
+          .card-price,
+          .desktop-dollor {
+            font-size: 40px;
+            color: var(--button-color);
+            margin-bottom: 0;
+          }
+
+          .mobile-container {
+            .card-dollor {
+              display: none;
             }
 
-            .mobile-container {
-                .card-dollor {
-                    display: none;
-                }
-                .per-month {
-                    color: rgba(142, 194, 242, 1);
-                    font-weight: bold;
-                  }
+            .per-month {
+              color: rgba(142, 194, 242, 1);
+              font-weight: bold;
             }
+          }
         }
-      
+
 
         .btn-custom {
           background: var(--button-color);
@@ -245,10 +259,12 @@ section {
           padding: 15px 40px;
           margin: 35px 0;
         }
+
         .lists {
           ul {
             list-style: none;
             padding: 0 40px 35px !important;
+
             li {
               display: flex;
               align-items: center;
@@ -256,6 +272,7 @@ section {
               font-size: 14px;
               font-weight: bold;
               padding-bottom: 15px;
+
               img {
                 display: flex;
                 padding-right: 10px;
@@ -267,12 +284,11 @@ section {
     }
   }
 }
+
 .contact-us {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       white 20%,
-      rgba(191, 191, 191, 0.3)
-    ),
+      rgba(191, 191, 191, 0.3)),
     url(../assets/ContactCover.png);
   background-repeat: none;
   background-position-x: 100%;
@@ -282,16 +298,20 @@ section {
       font-size: 16px;
       padding-top: 90px;
     }
+
     .appointment {
       font-size: 40px;
       padding-bottom: 40px;
     }
+
     .container {
       padding-left: 0;
       display: grid;
+
       .col {
         padding-bottom: 20px;
         max-width: 310px;
+
         .form-control,
         .form-select {
           width: 290px;
@@ -299,6 +319,7 @@ section {
           color: var(--second-font-color);
           padding: 11px 21px;
         }
+
         .message-input {
           .form-control {
             &.text-area {
@@ -310,11 +331,11 @@ section {
               color: var(--second-font-color);
               padding-left: 21px;
             }
-          } 
+          }
         }
       }
     }
-    
+
     .btn-custom {
       background: var(--button-color);
       font-size: 14px;
@@ -323,6 +344,7 @@ section {
       height: 52px;
       padding: 15px 40px;
     }
+
     .margin {
       padding-bottom: 90px;
     }
@@ -331,18 +353,21 @@ section {
 
 footer {
   padding-top: 40px;
+
   .footer-top {
     .wrapper {
       .text-container {
         .text-top {
           font-size: 24px;
         }
+
         .text-bottom {
           font-size: 14px;
           color: var(--second-font-color);
           padding-bottom: 40px;
         }
       }
+
       .btn-custom {
         background: var(--button-color);
         font-size: 14px;
@@ -352,30 +377,37 @@ footer {
       }
     }
   }
+
   .footer-middle {
     background: var(--background-color);
+
     .wrapper {
       .link-container {
         padding: 50px 32px 50px 0;
+
         h4 {
           font-size: 16px;
           margin-bottom: 20px;
         }
+
         ul {
           padding-left: 0;
         }
+
         ul li {
           font-size: 14px;
           line-height: 2.5;
         }
+
         &.get-in-touch {
-            .mobile-img {
-                display: none;
-            }
+          .mobile-img {
+            display: none;
+          }
         }
       }
     }
   }
+
   .footer-bottom {
     .wrapper {
       .copyright {
@@ -384,9 +416,11 @@ footer {
         padding: 25px 0;
         padding-bottom: 0;
       }
+
       .mobile-img {
         display: none;
       }
+
       .desktop-img {
         display: flex;
       }
